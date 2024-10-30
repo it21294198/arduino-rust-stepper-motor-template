@@ -98,7 +98,7 @@ fn main() -> ! {
         arduino_hal::delay_ms(500); // Reduced delay between directions
         
         // Rotate backward 200 steps
-        stepper.rotate_steps(1000);
+        stepper.rotate_steps(-1000);
         
         arduino_hal::delay_ms(500);
     }
